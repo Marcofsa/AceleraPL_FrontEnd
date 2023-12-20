@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<head class="menu">
+    <title>TESTE</title>
+</head>
+
+<body>
+
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">Sobre o teste</a>
+        <a href="contact.html">Contato</a>
+        <a href="bill.html">Bora BILL</a>
+        <a href="outra_pagina.html">MENSAGEM</a>
+    </div>
+
+    <div id="introducao">
+        <h2>PÁGINA DE TESTE</h2>
+        <p>PRIMEIRA AULA DE HTML</p>
+    </div>
+    <section>
+        <div class="content">
+            <form id="meuFormulario" action="outra_pagina.html" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome"><br><br>
+
+                <label for="texto">Texto:</label><br>
+                <textarea id="texto" name="texto"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('meuFormulario').addEventListener('submit', function (e) {
+            e.preventDefault();
+            var texto = document.getElementById('texto').value;
+            localStorage.setItem('texto', texto);
+            window.location.href = 'outra_pagina.html';
+        });
+    </script>
+
+</body>
+
+</html>

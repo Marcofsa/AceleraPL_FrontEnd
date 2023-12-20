@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+button {
+    margin: 5px;
+}
+
+.relBack{
+  background-color: black;
+}

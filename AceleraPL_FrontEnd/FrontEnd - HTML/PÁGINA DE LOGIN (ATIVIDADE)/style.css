@@ -1,0 +1,42 @@
+
+
+.fonte{
+    font-size:50px;
+    font-family:courier,arial,helvetica;
+    text-color: green;  
+}
+
+.corpo{
+
+  --bs-body-font-family: var(--bs-font-monospace);
+  --bs-body-line-height: 1.4;
+  --bs-body-bg: var(--bs-gray-100);
+}
+
+.head{
+    padding: 20px;
+    text-align: center;
+}
+
+#geral {
+    padding: 20px;
+    text-align: center;
+}
+
+.controle{
+    width: auto;
+    margin: 0 auto;
+}
+
+.campos{
+    margin-bottom: 10px;
+}
+
+.geral{
+    padding: 25px;
+    text-align: center;
+}
+
+.ground{
+  background-color: black;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<head class="menu">
+    <title>OUTRA PAGE</title>
+</head>
+
+<body>
+
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">Sobre o teste</a>
+        <a href="contact.html">Contato</a>
+        <a href="bill.html">Bora BILL</a>
+        <a href="outra_pagina.html">MENSAGEM</a>
+    </div>
+
+</body>
+
+<body>
+    <div>
+        <h1>RECEBA ESSE DADO</h1>
+
+        <textarea id="caixaText" name="texto"></textarea><br>
+    </div>
+
+    <script>
+        window.onload = function () {
+            var texto = localStorage.getItem('texto');
+            document.getElementById('caixaText').value = texto;
+        };
+    </script>
+</body>
+
+</html>
