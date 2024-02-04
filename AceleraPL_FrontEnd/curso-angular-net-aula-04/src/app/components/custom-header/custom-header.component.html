@@ -24,13 +24,18 @@
           <a class="nav-link dropdown-toggle" role="button"> Clientes </a>
           <ul class="dropdown-menu" *dropdownMenu>
             <li>
-              <a class="dropdown-item" routerLink="cliente-lista"
+              <a class="dropdown-item" routerLink="/cliente-lista"
                 >Lista de Clientes</a
               >
             </li>
             <li>
-              <a class="dropdown-item" routerLink="cadastro-cliente"
+              <a class="dropdown-item" routerLink="/cadastro-cliente"
                 >Cadastrar Clientes</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/logout"
+                >Sair</a
               >
             </li>
           </ul>
@@ -39,5 +44,3 @@
     </div>
   </nav>
 </header>
-<router-outlet></router-outlet>
-<footer>Curso Angular @2024</footer>
