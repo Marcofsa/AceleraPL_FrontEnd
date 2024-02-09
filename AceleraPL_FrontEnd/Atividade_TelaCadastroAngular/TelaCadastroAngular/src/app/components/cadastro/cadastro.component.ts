@@ -10,6 +10,7 @@ export class CadastroComponent {
   nome!: string;
   email!: string;
   telefone!: string;
+  comida!:string;
 
   constructor(private cadastroService: CadastroService) {}
 
@@ -18,10 +19,12 @@ export class CadastroComponent {
       nome: this.nome,
       email: this.email,
       telefone: this.telefone,
+      comida: this.comida,
     };
     this.cadastroService.salvarCadastro(novoCadastro);
     this.nome = '';
     this.email = '';
     this.telefone = '';
+    this.comida = '';
   }
 }
