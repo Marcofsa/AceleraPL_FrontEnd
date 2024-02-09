@@ -7,7 +7,7 @@ export class CadastroService {
   constructor() {}
 
   salvarCadastro(cadastro: any) {
-    const texto = `Nome: ${cadastro.nome}\nEmail: ${cadastro.email}\nComida Fav: ${cadastro.comida}\nTelefone: ${cadastro.telefone}\n\n`;
+    const texto = `Nome: ${cadastro.nome}\nEmail: ${cadastro.email}\nComida Fav: ${cadastro.comida}\nStack ${cadastro.stack}\nTelefone: ${cadastro.telefone}\n\n`;
     this.downloadTxtFile(texto, 'cadastro.txt');
   }
 
